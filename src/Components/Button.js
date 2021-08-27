@@ -12,18 +12,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const test = 1
-const Button = ({color,text}) => {
-
-    const onClick = (e) => {
-        if (test===1){
-         console.log("Testing")
-        }
-        else{
-         e.preventDefault()
-         
-        }
-    }
+const Button = ({color,text,onClick}) => {
     return (
         <div>
             <button onClick={onClick} style={{backgroundColor:color}} className="btn">{text}</button>
